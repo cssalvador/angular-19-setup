@@ -1,0 +1,1 @@
+pnpm release && git add CHANGELOG.md package.json

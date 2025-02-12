@@ -9,7 +9,8 @@
     "test": "ng test",
     "serve:ssr:angular-19-setup": "node dist/angular-19-setup/server/server.mjs",
     "prettier:staged": "npx pretty-quick --staged",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release": "standard-version"
   },
   "private": true,
   "dependencies": {
@@ -50,6 +51,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "prettier": "^3.5.0",
     "pretty-quick": "^4.0.0",
+    "standard-version": "^9.5.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.0"
   },

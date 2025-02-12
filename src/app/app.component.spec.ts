@@ -12,6 +12,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
+    console.log('app', app);
   });
 
   it(`should have the 'angular-19-setup' title`, () => {
