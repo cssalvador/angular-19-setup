@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular-19-setup": "node dist/angular-19-setup/server/server.mjs"
+    "serve:ssr:angular-19-setup": "node dist/angular-19-setup/server/server.mjs",
+    "prettier:staged": "npx pretty-quick --staged",
+    "prepare": "husky"
   },
   "private": true,
   "dependencies": {
@@ -30,15 +32,26 @@
     "@angular-devkit/build-angular": "^19.1.1",
     "@angular/cli": "^19.1.1",
     "@angular/compiler-cli": "^19.1.0",
+    "@commitlint/config-conventional": "^19.7.1",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "commitlint": "^19.7.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "^3.5.0",
+    "pretty-quick": "^4.0.0",
     "typescript": "~5.7.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
